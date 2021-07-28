@@ -1,0 +1,214 @@
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+@media only screen and (max-width: 576px) {
+  .item-40 {
+    width: 100%;
+  }
+  .item-60 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .item-40 {
+    width: 100%;
+  }
+  .item-60 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item-40 {
+    width: 100%;
+  }
+  .item-60 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .item-40 {
+    width: 50%;
+  }
+  .item-60 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .item-40 {
+    width: 40%;
+  }
+  .item-60 {
+    width: 60%;
+  }
+}
+
+
+
+
+/*grid system*/
+.grid {
+    display: grid;
+    margin: 0!important;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.grids {
+    display: grid;
+    margin: 0!important;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .form-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item-5 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .form-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item-5 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
