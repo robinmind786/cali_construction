@@ -1,0 +1,73 @@
+@media only screen and (max-width: 576px) {
+	footer .footer-info {
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact .form-contact input[type=text],
+	.contact .form-contact input[type=email],
+	.contact .form-contact input[type=number],
+	.contact .form-contact input[type=submit] {
+		width: 350px;
+
+	}
+
+	.custom-select {
+		width: 350px;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	footer .footer-info {
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	footer .footer-info {
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+	}
+	.contact .form-contact input[type=text],
+	.contact .form-contact input[type=email],
+	.contact .form-contact input[type=number],
+	.contact .form-contact input[type=submit] {
+		width: 340px;
+
+	}
+
+	.custom-select {
+		width: 340px;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+	footer .footer-info {
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+	}
+	.contact .form-contact input[type=text],
+	.contact .form-contact input[type=email],
+	.contact .form-contact input[type=number],
+	.contact .form-contact input[type=submit] {
+		width: 300px;
+
+	}
+
+	.custom-select {
+		width: 300px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	footer .footer-info {
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+	}
+}
